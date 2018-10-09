@@ -12,8 +12,10 @@ sections:
 - type: directory
   path: content/portfolio
   label: Portfolio
-  create: all
+  create: documents
   match: "**/*"
+  templates:
+  - portfolio-item
 - type: directory
   path: content
   label: Pages
