@@ -1,0 +1,18 @@
+---
+label: Image Gallery
+hide_body: false
+is_partial: true
+display_field: name
+fields:
+- type: boolean
+  label: Show Module
+  name: show_module
+- type: text
+  name: name
+  label: Module Name
+  config:
+    required: true
+  description: Doesn't appear on website. Is used for organization purposes.
+- type: image_gallery
+  name: images
+  label: Images
