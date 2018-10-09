@@ -1,0 +1,42 @@
+---
+label: Portfolio Item
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: headline
+  label: Headline
+- type: include
+  name: seo
+  label: SEO
+  template: seo
+- type: field_group
+  name: appearance
+  label: Appearance
+  fields:
+  - type: color
+    name: primary_color
+    config:
+      color_format: Hex
+    label: Primary Color
+  - type: color
+    name: dark_color
+    config:
+      color_format: Hex
+    label: Dark Color
+- type: file
+  label: Featured Image
+  name: featured_image
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+    required: true
+  label: Description
+  name: description
