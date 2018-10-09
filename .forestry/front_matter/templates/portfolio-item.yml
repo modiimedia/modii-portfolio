@@ -40,3 +40,10 @@ fields:
     required: true
   label: Description
   name: description
+- type: blocks
+  name: modules
+  label: Modules
+  template_types:
+  - image-block
+  - image-gallery
+  - text-block
