@@ -7,6 +7,7 @@ fields:
 - type: boolean
   label: Show Module
   name: show_module
+  default: true
 - type: text
   name: name
   label: Module Name
