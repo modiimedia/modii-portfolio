@@ -1,0 +1,22 @@
+---
+label: Text Block
+hide_body: false
+is_partial: true
+display_field: name
+fields:
+- type: boolean
+  label: Show Module
+  name: show_module
+- type: text
+  label: Module Name
+  config:
+    required: true
+  description: Doesn't display on the website. It is used for organization purposes.
+  name: name
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: Content
+  name: content
