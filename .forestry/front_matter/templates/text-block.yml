@@ -20,3 +20,18 @@ fields:
       format: markdown
   label: Content
   name: content
+- type: field_group
+  name: appearance
+  label: Appearance
+  fields:
+  - type: select
+    name: style
+    config:
+      source:
+        type: simple
+      required: true
+      options:
+      - light
+      - dark
+    label: Style
+    default: light
