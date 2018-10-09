@@ -22,20 +22,14 @@ modules:
     style: light
   show_module: true
   name: Podcast Section
-  content: "### Lorem ipsum dolor sit amet\n\nConsectetur adipiscing elit. Vivamus
-    pulvinar maximus neque, ut gravida neque lobortis ac. Etiam accumsan, tortor a
-    fringilla vehicula, augue elit mattis nunc, tincidunt aliquam dui orci non turpis.
-    Nam semper suscipit leo. Morbi nec facilisis augue. Curabitur non nisl risus.
-    Vivamus efficitur nunc luctus arcu aliquam, eu rhoncus urna pulvinar. Nulla vel
-    mi faucibus, tempus est et, pharetra nunc. Ut commodo sem ac mauris tempor hendrerit.
-    Duis commodo nisl quis nibh suscipit venenatis. \n\n![](/v1539127819/modii-website/podcast%20screenshot.png)\n\nVivamus
-    in ullamcorper nunc. Proin nulla mauris, ornare quis quam at, pharetra elementum
-    massa. Nam consectetur, leo a efficitur porttitor, risus leo gravida orci, blandit
-    ornare tellus turpis elementum magna. Praesent nisl felis, fringilla sed augue
-    ac, tempus elementum ante. Nunc non nisi tellus. Morbi et porta ipsum. Phasellus
-    varius ullamcorper enim. Nulla suscipit, sapien a pharetra mollis, enim odio ultrices
-    nisi, nec elementum sapien enim sit amet mauris. Fusce libero diam, gravida et
-    lacus in, tristique molestie nunc. Ut at metus vitae eros pharetra rutrum."
+  content: |-
+    ### Lorem ipsum dolor sit amet
+
+    Consectetur adipiscing elit. Vivamus pulvinar maximus neque, ut gravida neque lobortis ac. Etiam accumsan, tortor a fringilla vehicula, augue elit mattis nunc, tincidunt aliquam dui orci non turpis. Nam semper suscipit leo. Morbi nec facilisis augue. Curabitur non nisl risus. Vivamus efficitur nunc luctus arcu aliquam, eu rhoncus urna pulvinar. Nulla vel mi faucibus, tempus est et, pharetra nunc. Ut commodo sem ac mauris tempor hendrerit. Duis commodo nisl quis nibh suscipit venenatis.
+
+    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1539127819/modii-website/podcast%20screenshot.png)
+
+    Vivamus in ullamcorper nunc. Proin nulla mauris, ornare quis quam at, pharetra elementum massa. Nam consectetur, leo a efficitur porttitor, risus leo gravida orci, blandit ornare tellus turpis elementum magna. Praesent nisl felis, fringilla sed augue ac, tempus elementum ante. Nunc non nisi tellus. Morbi et porta ipsum. Phasellus varius ullamcorper enim. Nulla suscipit, sapien a pharetra mollis, enim odio ultrices nisi, nec elementum sapien enim sit amet mauris. Fusce libero diam, gravida et lacus in, tristique molestie nunc. Ut at metus vitae eros pharetra rutrum.
 - template: image-gallery
   name: Image Gallery
   images:
