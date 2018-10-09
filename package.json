@@ -2,15 +2,19 @@
   "name": "modii-website",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "concurrently --kill-others \"npm run css-watch\"  \"hugo server\"",
+    "css-watch": "node-sass --watch styles/ -o static/css/",
+    "publish": "hugo"
   },
   "author": "",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "bulma": "^0.7.1",
     "node-sass": "^4.9.3"
+  },
+  "devDependencies": {
+    "concurrently": "^4.0.1"
   }
 }
