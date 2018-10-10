@@ -1,0 +1,16 @@
+---
+label: Client
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Name
+  config:
+    required: true
+- type: text
+  label: Full Name
+  name: full_name
+- type: file
+  name: logo
+  label: Logo
