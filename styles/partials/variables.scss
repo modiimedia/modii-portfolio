@@ -1,0 +1,22 @@
+$primary: #193fe2;
+$link: $primary;
+$info: #ffc200;
+$success: green;
+$warning: yellow;
+$danger: red;
+$dark: #222222;
+$text: #333333;
+
+/* screen sizes */
+$gap: 64px;
+$tablet: 769px;
+$desktop: 960px + (2 * $gap);
+$widescreen: 1152px + (2 * $gap);
+$widescreen-enabled: true;
+$fullhd: 1344px + (2 * $gap);
+
+
+/* transitions */
+$easing: ease;
+$transitionL: 500ms;
+$transitionS: 300ms;

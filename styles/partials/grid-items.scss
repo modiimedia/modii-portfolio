@@ -1,0 +1,82 @@
+@import 'styles/partials/variables.scss';
+
+.portfolioItem {
+    display: flex;
+    display: -webkit-flex;
+    align-items: flex-end;
+    height: 100%;
+    position: relative;
+    padding: 300px 100px 30px 30px;
+    color: white;
+    background: $primary;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    overflow: hidden;
+    h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        transition: transform $transitionL $easing;
+    }
+    .portfolioItemContent {
+        position: relative;
+        z-index: 1;
+        .iconAppear {
+            display: flex;
+            display: -webkit-flex;
+            justify-content: flex-end;
+            transform: translateX(-20px);
+            position: absolute;
+            left: 0px;
+            right: auto;
+            top: auto;
+            bottom: 0px;
+            opacity: 0;
+            color: $info;
+            font-size: 50px;
+            transition: transform $transitionL $easing, opacity $transitionL $easing;
+        }
+    }
+    .portfolioImage {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        transition: top $transitionL $easing, bottom $transitionL $easing, left $transitionL $easing, right $transitionL $easing;
+        .imageOverlay {
+            opacity: 0.15;
+            transition: opacity $transitionL $easing;
+        }
+    }
+    @media screen and (max-width: $widescreen) {
+        padding: 200px 50px 30px 30px;
+    }
+    @media screen and (max-width: $tablet) {
+        padding: 150px 50px 20px 20px;
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+}
+.portfolioItem:hover {
+    color: white;
+    .portfolioImage {
+        top: -20px;
+        right: -20px;
+        left: -20px;
+        bottom: -20px;
+        .imageOverlay {
+            opacity: 0.4;
+        }
+    }
+    .portfolioItemContent {
+        h2 {
+            transform: translateY(-50px)
+        }
+        .iconAppear {
+            transform: translateX(0px);
+            opacity: 1;
+        }
+    }
+}

@@ -2,3 +2,5 @@ baseurl: "https://modiimedia.com"
 languageCode: "en-us"
 title: "Modii"
 enableRobotsTXT: true
+params:
+  cloudinaryBase: "https://res.cloudinary.com/modii/"

@@ -1,9 +1,8 @@
-<header class="navbar is-fixed-top is-transparent has-text-white">
+<header class="navbar is-transparent has-text-white">
     <nav class="container">
         <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                    <img src="https://uploads-ssl.webflow.com/5b1f0dea2d51d9f7fd926578/5b281b2f1d25f26ccd11cbaa_modii%20logo_modii%20new%20logo%20(white)-p-500.png" alt="Bulma: a modern CSS framework based on Flexbox"
-                        width="" height="">
+                {{ partial "svg-logo.html" }}
                 </a>
                 <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
                     <span></span>
@@ -14,65 +13,35 @@
     
         <div id="navbarExampleTransparentExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item" href="https://bulma.io/">
-                    Home
-                </a>
-                <div class="navbar-item has-dropdown is-hoverable">
-                    <a class="navbar-link" href="/documentation/overview/start/">
-                        Docs
-                    </a>
-                    <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="/documentation/overview/start/">
-                            Overview
-                        </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                            Modifiers
-                        </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/columns/basics/">
-                            Columns
-                        </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/layout/container/">
-                            Layout
-                        </a>
-                        <a class="navbar-item" href="https://bulma.io/documentation/form/general/">
-                            Form
-                        </a>
-                        <hr class="navbar-divider">
-                        <a class="navbar-item" href="https://bulma.io/documentation/elements/box/">
-                            Elements
-                        </a>
-                        <a class="navbar-item is-active" href="https://bulma.io/documentation/components/breadcrumb/">
-                            Components
-                        </a>
-                    </div>
-                </div>
+
             </div>
     
             <div class="navbar-end">
+                <a class="navbar-item" href="/">
+                    <div>Home</div>
+                    <div class="navbar-item-underline">
+                        <div></div>
+                    </div>
+                </a>
+                <a class="navbar-item" href="/portfolio">
+                    Portfolio
+                    <div class="navbar-item-underline">
+                        <div></div>
+                    </div>
+                </a>
                 <div class="navbar-item">
                     <div class="field is-grouped">
                         <p class="control">
-                            <a class="bd-tw-button button" data-social-network="Twitter" data-social-action="tweet"
-                                data-social-target="http://localhost:4000" target="_blank" href="https://twitter.com/intent/tweet?text=Bulma: a modern CSS framework based on Flexbox&amp;hashtags=bulmaio&amp;url=http://localhost:4000&amp;via=jgthms">
+                            <a class="button is-info wide-padding has-text-grey-dark" href="/contact">
                                 <span class="icon">
-                                    <i class="fab fa-twitter"></i>
+                                    <i class="fas fa-envelope"></i>
                                 </span>
-                                <span>
-                                    Tweet
-                                </span>
-                            </a>
-                        </p>
-                        <p class="control">
-                            <a class="button is-primary" href="https://github.com/jgthms/bulma/releases/download/0.7.1/bulma-0.7.1.zip">
-                                <span class="icon">
-                                    <i class="fas fa-download"></i>
-                                </span>
-                                <span>Download</span>
+                                <span>Contact Us</span>
                             </a>
                         </p>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
     </nav>
 </header>

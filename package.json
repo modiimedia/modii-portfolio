@@ -5,14 +5,15 @@
   "main": "",
   "scripts": {
     "start": "concurrently --kill-others \"npm run css-watch\"  \"hugo server\"",
-    "css-watch": "node-sass --watch styles/ -o static/css/",
+    "css-watch": "node-sass --watch styles/main.scss -o static/css/",
     "publish": "hugo"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "bulma": "^0.7.1",
-    "node-sass": "^4.9.3"
+    "node-sass": "^4.9.3",
+    "particles.js": "^2.0.0"
   },
   "devDependencies": {
     "concurrently": "^4.0.1"

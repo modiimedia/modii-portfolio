@@ -1,0 +1,21 @@
+{{ $cloudinary := .site.Params.cloudinaryBase }}
+{{ $galleryLen := len .local.images }}
+<section class="section">
+    <div class="container">
+        <div class="columns is-multiline">
+            {{ range .local.images }}
+                <div class="column 
+                    {{ if (ge $galleryLen 4) -}}
+                    is-one-quarter
+                    {{- else if (eq $galleryLen 3) -}}
+                    is-one-third
+                    {{- else -}}
+                    is-one-half
+                    {{- end -}}              
+                ">
+                    <img src="{{ $cloudinary }}w_600,h_400,c_fill,q_60,f_auto{{ . }}" style="">
+                </div>
+            {{ end }}
+        </div>
+    </div>
+</section>

@@ -1,11 +1,15 @@
 {{ define "main" }}
 <section class="hero is-fullheight is-dark">
+    <div class="heroImage dark">
+        <figure style="background-image: url({{ $.Site.Params.cloudinaryBase }}w_1500,q_60,f_auto{{ .Params.featured_image }})">
+        </figure>
+    </div>
     <div class="hero-body is-flex align-bottom">
         <div class="container">
             <div class="columns">
                 <div class="column is-two-thirds">
                     <div class="subtitle">SOGMI.org</div>
-                    <h1 class="projectTitle">{{ .Title }}</h1>
+                    <h1 class="projectTitle">{{ .Params.headline }}</h1>
                 </div>
                 <div class="column">
 
@@ -21,10 +25,22 @@
                     <h2 class="has-text-weight-bold">Client</h2>
             </div>
             <div class="column">
-                <h2 class="title">Client</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. At nostrum laborum architecto totam fugit odio accusamus dolor tempore repellat repellendus fugiat, saepe recusandae iusto est quas, atque nulla labore omnis!</p>
+                <div class="content portfolio">
+                        {{ .Params.description | markdownify }}    
+                </div>
             </div>
         </div>
     </div>
 </section>
+{{ $site := $.Site }}
+{{ range .Params.modules }}
+    <!-- create partial path from "template" param -->
+    {{ $partial := print "modules/" .template ".html" }}
+    {{ $checkPartial := print "layouts/partials/" $partial }}
+    <!-- if partial exists call partial -->
+    {{ if fileExists $checkPartial }}
+        <!-- use .local to call a local parameter and use .site to call a sitewide parameter -->
+        {{ partial $partial (dict "local" . "site" $site )}}
+    {{ end }}
+{{ end }}
 {{ end }}

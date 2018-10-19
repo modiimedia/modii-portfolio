@@ -1,5 +1,5 @@
 ---
-title: Preparing Ministry for a Global Audience
+title: SOGMI
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1539127648/modii-website/alexandra-kirr-322679-unsplash%20%281%29.jpg"
 description: |-
