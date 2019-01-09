@@ -3,9 +3,25 @@
 .hero {
     .title {
         font-size: 3rem;
+        font-weight: 900;
     }
     .subtitle {
         font-size: 1.8rem;
+    }
+    .button {
+        margin-right: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+.hero.homepage {
+    margin-bottom: 3rem;
+    .hero-body {
+        .container {
+            // * {
+            //     max-width: 800px;
+            // }
+        }
     }
 }
 

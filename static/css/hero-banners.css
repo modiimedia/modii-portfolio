@@ -1,10 +1,18 @@
 /* screen sizes */
 /* transitions */
 .hero .title {
-  font-size: 3rem; }
+  font-size: 3rem;
+  font-weight: 900; }
 
 .hero .subtitle {
   font-size: 1.8rem; }
+
+.hero .button {
+  margin-right: 1rem;
+  margin-top: 1rem; }
+
+.hero.homepage {
+  margin-bottom: 3rem; }
 
 .hero.portfolioBanner .title {
   font-size: 4rem;

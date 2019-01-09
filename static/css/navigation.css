@@ -49,10 +49,10 @@ header.navbar {
   top: 0;
   padding: 5px 0;
   background: white;
-  box-shadow: 0px 5px 50px rgba(0, 0, 0, 0.404);
-  color: #333333;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  color: #131313;
   position: fixed; }
   .navbar.scrolled .navbar-item, .navbar.scrolled .navbar-link {
-    color: #333333; }
+    color: #131313; }
   .navbar.scrolled .navbar-brand svg#Logo {
     fill: black; }
