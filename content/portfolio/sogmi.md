@@ -1,7 +1,7 @@
 ---
 title: SOGMI
 headline: Preparing Ministry for a Global Audience
-featured_image: "/v1539127648/modii-website/alexandra-kirr-322679-unsplash%20%281%29.jpg"
+featured_image: "/v1548451539/modii-website/IMG_7443_edit_compressed.jpg"
 description: |-
   ## The Miami Heat Offers a Fan Experience Unlike Any Other in Its League
 
