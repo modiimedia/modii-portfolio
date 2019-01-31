@@ -21,6 +21,9 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: document
+  path: data/clients.yaml
+  label: Clients
 upload_dir: modii-website
 public_path: https://res.cloudinary.com/modii/w_1000,q_60,f_auto
 front_matter_path: ''
