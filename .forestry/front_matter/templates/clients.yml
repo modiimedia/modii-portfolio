@@ -21,3 +21,5 @@ fields:
   - type: file
     name: logo
     label: Logo
+pages:
+- data/clients.yaml
