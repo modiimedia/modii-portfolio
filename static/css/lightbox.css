@@ -1,0 +1,39 @@
+html.lightboxOpen body.lightboxOpen {
+  overflow: hidden !important; }
+
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0;
+  display: block;
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+  transition: opacity ease 300ms, z-index ease 300ms; }
+  #lightbox .imageOverlay {
+    opacity: 0.8;
+    z-index: 1; }
+  #lightbox .lightboxClose {
+    cursor: pointer; }
+  #lightbox .lightboxContent {
+    position: relative;
+    z-index: 10;
+    padding: 0px; }
+    #lightbox .lightboxContent img {
+      max-height: 90vh; }
+  @media (max-width: 700px) {
+    #lightbox {
+      padding: 20px; } }
+
+#lightbox.active {
+  z-index: 1000;
+  opacity: 1; }
+
+.lightboxItem {
+  cursor: pointer; }

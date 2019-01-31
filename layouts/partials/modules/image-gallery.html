@@ -13,7 +13,7 @@
                     is-one-half
                     {{- end -}}              
                 ">
-                    <img src="{{ $cloudinary }}w_600,h_400,c_fill,q_60,f_auto{{ . }}" style="">
+                    <img src="{{ $cloudinary }}w_600,h_400,c_fill,q_60,f_auto{{ . }}" data-img="{{ $cloudinary}}w_1200,c_fit,q_80,f_auto{{ . }}" class="lightboxItem" style="">
                 </div>
             {{ end }}
         </div>

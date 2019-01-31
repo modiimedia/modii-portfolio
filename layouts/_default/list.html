@@ -22,7 +22,7 @@
             {{ range .Pages }}
                 <article class="column is-half">
                     <a href="{{ .RelPermalink }}" class="portfolioItem">
-                        <figure class="portfolioImage" style="background-image: url({{ $cloudinary }}w_600,q_60,f_auto{{ .Params.featured_image }}">
+                        <figure class="portfolioImage" style="background-image: url({{ $cloudinary }}w_750,q_80{{ .Params.featured_image }})">
                             <div class="imageOverlay"></div>
                         </figure>
                         <div class="portfolioItemContent">
