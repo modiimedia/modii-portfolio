@@ -17,3 +17,5 @@ fields:
 - type: file
   name: logo
   label: Logo
+pages:
+- content/clients/abundantly-social.md
