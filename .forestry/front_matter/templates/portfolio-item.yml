@@ -11,6 +11,16 @@ fields:
 - type: text
   name: headline
   label: Headline
+- type: select
+  name: client
+  config:
+    source:
+      type: pages
+      section: clients-0b88a90a-05f1-47b0-9625-a793e11cf855
+  label: Client
+- type: tag_list
+  label: Services Provided
+  name: services
 - type: include
   name: seo
   label: SEO
@@ -47,13 +57,5 @@ fields:
   - image-block
   - image-gallery
   - text-block
-- type: select
-  name: client
-  config:
-    source:
-      type: documents
-      section: clients
-      file: data/clients.yaml
-  label: Client
 pages:
 - content/portfolio/abundantly-social.md
