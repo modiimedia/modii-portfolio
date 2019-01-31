@@ -47,5 +47,13 @@ fields:
   - image-block
   - image-gallery
   - text-block
+- type: select
+  name: client
+  config:
+    source:
+      type: documents
+      section: clients
+      file: data/clients.yaml
+  label: Client
 pages:
 - content/portfolio/abundantly-social.md
