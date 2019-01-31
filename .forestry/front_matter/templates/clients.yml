@@ -3,7 +3,7 @@ label: Clients
 hide_body: false
 is_partial: false
 fields:
-- type: field_group
+- type: field_group_list
   name: clients
   label: Clients
   fields:
