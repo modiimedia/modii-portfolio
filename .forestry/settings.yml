@@ -4,10 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: data/clients.yaml
-  label: Clients
-  match: "**/*"
 - type: directory
   path: content/posts
   label: Posts
@@ -25,6 +21,9 @@ sections:
   label: Pages
   create: all
   match: "*"
+- type: document
+  path: data/clients.yaml
+  label: Clients
 upload_dir: modii-website
 public_path: https://res.cloudinary.com/modii/w_1000,q_60,f_auto
 front_matter_path: ''
