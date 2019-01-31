@@ -37,5 +37,11 @@ modules:
   - "/v1539127682/modii-website/59c0ae2c1de2e0000152b8b2_marion-michele-191320.jpg"
   - "/v1539127819/modii-website/podcast%20screenshot.png"
   show_module: true
+services:
+- web design
+- web development
+- web hosting
+- onsite training
+client: clients/sogmi.md
 
 ---
