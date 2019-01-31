@@ -14,3 +14,6 @@ fields:
 - type: file
   name: logo
   label: Logo
+- type: text
+  name: website
+  label: website
