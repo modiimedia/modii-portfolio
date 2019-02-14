@@ -37,7 +37,7 @@
                     {{ end }}
                     {{ with .Params.project_year }}
                         <h2 class="has-text-weight-bold">Year</h2>
-                        <p>{{ . }}</p>
+                        <p>{{ dateFormat "2006" . }}</p>
                     {{ end }}
                     {{ with .Params.services }}
                         <h2 class="has-text-weight-bold">Services</h2>
