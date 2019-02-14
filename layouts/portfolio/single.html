@@ -1,0 +1,74 @@
+{{ define "main" }}
+<section class="hero is-fullheight is-dark">
+    <div class="heroImage dark">
+        <figure style="background-image: url({{ $.Site.Params.cloudinaryBase }}w_1500,q_60,f_auto{{ .Params.featured_image }}); background-attachment: fixed;">
+        </figure>
+    </div>
+    <div class="hero-body is-flex align-bottom">
+        <div class="container portfolio">
+            <div class="columns is-centered">
+                <div class="column">
+                    <div class="subtitle">SOGMI.org</div>
+                    <h1 class="projectTitle">{{ .Params.headline }}</h1>
+                </div>
+                <!-- <div class="column">
+
+                </div> -->
+            </div>
+        </div>
+    </div>
+</section>
+<section class="section is-medium">
+    <div class="container portfolio">
+        <div class="columns is-variable is-8">
+            <div class="column">
+                <div class="content lightboxContainer portfolio">
+                    {{ .Params.description | markdownify }}    
+                </div>
+            </div>
+            <div class="column is-one-third">
+                <div class="portfolioMeta">
+                    {{ with .Params.client }}
+                        {{ with $.Site.GetPage . }}
+                        <img class="clientLogo" src="{{ $.Site.Params.cloudinaryBase }}w_300,c_fit{{ .Params.logo }}">
+                        <h2 class="has-text-weight-bold">Client</h2>
+                        <p>{{ if .Params.full_name }}{{ .Params.full_name }}{{ else }}{{ .Title }}{{ end }}</p>
+                        {{ end }}
+                    {{ end }}
+                    {{ with .Params.project_year }}
+                        <h2 class="has-text-weight-bold">Year</h2>
+                        <p>{{ . }}</p>
+                    {{ end }}
+                    {{ with .Params.services }}
+                        <h2 class="has-text-weight-bold">Services</h2>
+                        <p>
+                        {{- range $i, $e := . -}}
+                            {{- if eq $i 0 -}}{{- . -}}{{- else -}}, {{ . -}}{{- end -}}
+                        {{- end -}}
+                        </p>
+                    {{ end }}
+                    {{ with .Params.project_website }}
+                        <a class="button is-info has-text-grey-dark wide-padding" href="{{ . }}" target="_blank" style="margin-top: 2rem">Visit Website</a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{{ $site := $.Site }}
+{{ range .Params.modules }}
+    <!-- create partial path from "template" param -->
+    {{ $partial := print "modules/" .template ".html" }}
+    {{ $checkPartial := print "layouts/partials/" $partial }}
+    <!-- if partial exists call partial -->
+    {{ if fileExists $checkPartial }}
+        <!-- use .local to call a local parameter and use .site to call a sitewide parameter -->
+        {{ partial $partial (dict "local" . "site" $site )}}
+    {{ end }}
+{{ end }}
+{{ partial "lightbox.html" . }}
+{{ end }}
+
+{{ define "addscripts" }}
+<script src="/js/lightbox-gallery.js" type="text/javascript"></script>
+{{ end }}

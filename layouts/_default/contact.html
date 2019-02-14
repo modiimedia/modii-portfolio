@@ -1,0 +1,134 @@
+{{ define "main" }}
+<section class="hero is-primary is-bold portfolioBanner curved">
+    <div class="heroImage gradientOverlay" style="background-image: url('https://uploads-ssl.webflow.com/5b1f0dea2d51d9f7fd926578/5b4d087cd30c141e42b4857b_photo-1483728642387-6c3bdd6c93e5%20(1).jpg')">
+        <div class="imageOverlay"></div>
+    </div>
+    <div class="heroImage" id="particle-up"></div>
+    <div class="hero-body is-flex align-bottom">
+        <div class="container">
+            <h1 class="title">{{ .Title }}</h1>
+            <h2 class="subtitle">Start your journey with us today. 🤙</h2>
+            <!-- <span class="tag">All</span>
+            <span class="tag">All</span>
+            <span class="tag">All</span>
+            <span class="tag">All</span> -->
+        </span>
+    </div>
+</section>
+<section class="section">
+    <div class="container">
+
+    </div>
+</section>
+{{ end }}
+
+{{ define "addscripts" }}
+<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript">
+    particlesJS("particle-up", {
+        "particles": {
+        "number": {
+            "value": 120,
+            "density": {
+            "enable": true,
+            "value_area": 1200
+            }
+        },
+        "color": {
+            "value": "#ffffff"
+        },
+        "shape": {
+            "type": "circle",
+            "stroke": {
+            "width": 0,
+            "color": "#000000"
+            },
+            "polygon": {
+            "nb_sides": 5
+            }
+        },
+        "opacity": {
+            "value": 0.3,
+            "random": false,
+            "anim": {
+            "enable": false,
+            "speed": 1,
+            "opacity_min": 0.1,
+            "sync": false
+            }
+        },
+        "size": {
+            "value": 3,
+            "random": true,
+            "anim": {
+            "enable": false,
+            "speed": 40,
+            "size_min": 0.1,
+            "sync": false
+            }
+        },
+        "line_linked": {
+            "enable": false,
+            "distance": 96.14383117143238,
+            "color": "#ffffff",
+            "opacity": 0.4,
+            "width": 1
+        },
+        "move": {
+            "enable": true,
+            "speed": 0.3,
+            "direction": "top",
+            "random": true,
+            "straight": false,
+            "out_mode": "out",
+            "bounce": true,
+            "attract": {
+            "enable": true,
+            "rotateX": 961.4383117143238,
+            "rotateY": 1281.9177489524316
+            }
+        }
+        },
+        "interactivity": {
+        "detect_on": "canvas",
+        "events": {
+            "onhover": {
+            "enable": false,
+            "mode": "repulse"
+            },
+            "onclick": {
+            "enable": true,
+            "mode": "push"
+            },
+            "resize": true
+        },
+        "modes": {
+            "grab": {
+            "distance": 400,
+            "line_linked": {
+                "opacity": 1
+            }
+            },
+            "bubble": {
+            "distance": 400,
+            "size": 40,
+            "duration": 2,
+            "opacity": 8,
+            "speed": 3
+            },
+            "repulse": {
+            "distance": 200,
+            "duration": 0.4
+            },
+            "push": {
+            "particles_nb": 4
+            },
+            "remove": {
+            "particles_nb": 2
+            }
+        }
+        },
+        "retina_detect": true
+    });var count_particles, stats, update; stats = new Stats; stats.setMode(0); stats.domElement.style.position = 'absolute'; stats.domElement.style.left = '0px'; stats.domElement.style.top = '0px'; document.body.appendChild(stats.domElement); count_particles = document.querySelector('.js-count-particles'); update = function() { stats.begin(); stats.end(); if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) { count_particles.innerText = window.pJSDom[0].pJS.particles.array.length; } requestAnimationFrame(update); }; requestAnimationFrame(update);;
+</script>
+{{ end }}

@@ -1,4 +1,4 @@
-let allImages = document.querySelectorAll(".content img")
+let allImages = document.querySelectorAll(".lightboxContainer img")
 
 for(let i = 0; i < allImages.length; i++){
     let img = allImages[i]

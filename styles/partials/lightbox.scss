@@ -44,4 +44,10 @@ html.lightboxOpen body.lightboxOpen {
 
 .lightboxItem {
     cursor: pointer;
+    transition: opacity 300ms ease;
+    -webkit-transition: opacity 300ms ease;
+}
+
+.lightboxItem:hover {
+    opacity: 0.7;
 }

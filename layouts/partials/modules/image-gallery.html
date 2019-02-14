@@ -1,6 +1,6 @@
 {{ $cloudinary := .site.Params.cloudinaryBase }}
 {{ $galleryLen := len .local.images }}
-<section class="section">
+<section class="section lightboxContainer">
     <div class="container">
         <div class="columns is-multiline">
             {{ range .local.images }}
@@ -13,7 +13,7 @@
                     is-one-half
                     {{- end -}}              
                 ">
-                    <img src="{{ $cloudinary }}w_600,h_400,c_fill,q_60,f_auto{{ . }}" data-img="{{ $cloudinary}}w_1200,c_fit,q_80,f_auto{{ . }}" class="lightboxItem" style="">
+                    <img src="{{ $cloudinary }}w_600,h_400,c_fill,q_60,f_auto{{ . }}" data-img="{{ $cloudinary}}w_1200,c_fit,q_80,f_auto{{ . }}" class="" style="width:100%">
                 </div>
             {{ end }}
         </div>

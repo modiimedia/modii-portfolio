@@ -43,5 +43,6 @@ services:
 - web hosting
 - onsite training
 client: clients/sogmi.md
-
+project_website: 'https://www.sogmi.org'
+project_year: '2018'
 ---

@@ -7048,6 +7048,8 @@ header.navbar {
 .content {
   max-width: 1000px;
   margin: 0 auto; }
+  .content p {
+    line-height: 1.9em; }
   .content p:not(:last-child) {
     margin-bottom: 2em; }
   .content img {
@@ -7060,6 +7062,9 @@ header.navbar {
   @media screen and (max-width: 769px) {
     .content.portfolio h2 {
       font-size: 2rem; } }
+
+.portfolioMeta p {
+  margin-bottom: 1.2rem; }
 
 /* screen sizes */
 /* transitions */
@@ -7169,7 +7174,12 @@ html.lightboxOpen body.lightboxOpen {
   opacity: 1; }
 
 .lightboxItem {
-  cursor: pointer; }
+  cursor: pointer;
+  transition: opacity 300ms ease;
+  -webkit-transition: opacity 300ms ease; }
+
+.lightboxItem:hover {
+  opacity: 0.7; }
 
 * {
   box-sizing: border-box;
@@ -7182,7 +7192,7 @@ html.lightboxOpen body.lightboxOpen {
 .projectTitle {
   font-size: 4rem;
   font-weight: 800;
-  padding-bottom: 15%; }
+  padding-bottom: 5%; }
   @media screen and (max-width: 1088px) {
     .projectTitle {
       font-size: 3.5rem; } }
@@ -7295,3 +7305,10 @@ body > section:last-of-type {
   background: none;
   border: 1px solid #ffc200;
   color: #ffc200; }
+
+.clientLogo {
+  max-height: 75px;
+  margin-bottom: 1.5rem; }
+
+.container.portfolio {
+  max-width: 1000px; }
