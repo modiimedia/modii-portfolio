@@ -18,6 +18,15 @@ fields:
       type: pages
       section: clients-0b88a90a-05f1-47b0-9625-a793e11cf855
   label: Client
+- type: datetime
+  config:
+    date_format: YYYY
+    required: true
+  label: Project Year
+  name: project_year
+- type: text
+  name: project_website
+  label: Project Website
 - type: tag_list
   label: Services Provided
   name: services
