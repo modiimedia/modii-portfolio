@@ -6749,8 +6749,6 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-/* screen sizes */
-/* transitions */
 .hero .title {
   font-size: 3rem;
   font-weight: 900; }
@@ -6816,8 +6814,6 @@ label.panel-block {
     background: -o-linear-gradient(163deg, #0043ff -3%, rgba(255, 0, 108, 0.7));
     background: linear-gradient(163deg, #0043ff -3%, rgba(255, 0, 108, 0.7)); }
 
-/* screen sizes */
-/* transitions */
 header.navbar {
   top: 0;
   padding: 32px 0 5px 0;
@@ -7066,8 +7062,6 @@ header.navbar {
 .portfolioMeta p {
   margin-bottom: 1.2rem; }
 
-/* screen sizes */
-/* transitions */
 .portfolioItem {
   display: flex;
   display: -webkit-flex;
@@ -7180,6 +7174,34 @@ html.lightboxOpen body.lightboxOpen {
 
 .lightboxItem:hover {
   opacity: 0.7; }
+
+.multiple_choice_checkbox input[type="checkbox"] {
+  display: none; }
+
+.multiple_choice_checkbox label {
+  cursor: pointer;
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: none;
+  border: 1px solid lightgray;
+  margin: 0 1rem 1rem 0;
+  transition: background 200ms ease, border 200ms ease, opacity 200ms ease;
+  -webkit-transition: background 200ms ease, border 200ms ease, opacity 200ms ease; }
+
+.multiple_choice_checkbox label:hover {
+  opacity: 0.7; }
+
+.multiple_choice_checkbox input:checked + label {
+  background: #ffc200;
+  border-color: #ffc200; }
+
+.field_group {
+  margin-bottom: 3rem; }
+  .field_group h2 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem; }
 
 * {
   box-sizing: border-box;

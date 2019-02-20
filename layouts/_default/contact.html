@@ -15,9 +15,55 @@
         </span>
     </div>
 </section>
-<section class="section">
+<section class="section" style="margin-top: -200px">
     <div class="container">
+        <div class="columns">
+            <div class="column is-two-thirds">
+                <form style="background: rgb(238, 238, 238); padding: 2rem; border-radius: 4px; box-shadow: 0px 20px 200px rgba(0, 0, 0, 0.562)">
+                    <div class="field_group">
+                        <h2>Tell us about yourself</h2>
+                        <div class="field">
+                            <div class="control">
+                                <input name="name" class="input is-medium" type="text" placeholder="Name" required>
+                            </div>
+                        </div>
+                        <div class="field">
+                                <div class="control">
+                                <input name="email" class="input is-medium" type="email" placeholder="Email" required>
+                                </div>
+                        </div>
+                        <div class="field">
+                            <div class="control">
+                                <input class="input is-medium" type="tel" name="phone" id="" placeholder="Phone Number">
+                            </div>
+                        </div>        
+                    </div>
+                    <div class="field_group">
+                        <h2>What services are you interested in?</h2>
+                        <div class="field">
+                            <div class="control multiple_choice_checkbox">
+                                {{ range $i, $e := .Params.services_offered }}
+                                <input type="checkbox" name="{{ . }}" id="checkbox_{{ $i }}">
+                                <label for="checkbox_{{ $i }}">{{ . | title }}</label>
+                                {{ end }}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field_group">
+                        <h2>Tell us more about the project</h2>
+                        <div class="field">
+                            <textarea class="textarea" name="details" id="" rows="10"></textarea>
+                        </div>
+                    </div>  
+                    <div class="field">
+                        <input class="button is-medium is-primary" type="submit" value="Submit">
+                    </div>                  
+                </form>
+            </div>
+            <div class="column">
 
+            </div>
+        </div>
     </div>
 </section>
 {{ end }}
