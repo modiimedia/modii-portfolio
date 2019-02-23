@@ -27,6 +27,10 @@ fields:
   - type: file
     name: logo
     label: Logo
+  - type: textarea
+    name: svg_logo
+    label: SVG Logo
+    description: Copy and paste the code for the SVG file here.
   - type: file
     name: favicon
     label: Favicon
