@@ -24,11 +24,8 @@ fields:
   name: media
   description: Change Website Logos
   fields:
-  - type: file
-    name: logo
-    label: Logo
   - type: textarea
-    name: svg_logo
+    name: logo
     label: SVG Logo
     description: Copy and paste the code for the SVG file here.
   - type: file
