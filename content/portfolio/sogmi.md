@@ -1,5 +1,5 @@
 ---
-title: SOGMI
+title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1548451539/modii-website/IMG_7443_edit_compressed.jpg"
 description: |-
@@ -44,5 +44,6 @@ services:
 - onsite training
 client: clients/sogmi.md
 project_website: https://www.sogmi.org
-project_year: 2018-01-01 00:00:00 -0600
+project_year: 2018-01-01 06:00:00 +0000
+
 ---
