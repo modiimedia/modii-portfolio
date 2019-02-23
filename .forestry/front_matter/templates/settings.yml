@@ -59,21 +59,15 @@ fields:
   - type: text
     name: zip
     label: Zipcode
-- type: field_group
+- type: field_group_list
   name: social_media
   label: Social Media
   fields:
-  - type: field_group_list
-    name: social
-    label: Social Media Account
-    fields:
-    - type: text
-      name: icon
-      label: Fontawesome Icon
-      config:
-        required: false
-    - type: text
-      name: url
-      label: Account URL
-      config:
-        required: true
+  - type: text
+    name: icon
+    label: Fontawesome Icon
+  - type: text
+    name: url
+    label: Account URL
+    config:
+      required: true
