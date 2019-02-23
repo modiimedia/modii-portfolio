@@ -1,11 +1,20 @@
 @import "styles/partials/variables.scss";
 
+html.menu-open {
+    overflow: hidden;
+}
+
 header.navbar {
+    position: relative;
     top: 0;
     padding: 32px 0 5px 0;
     width: 100%;
     position: absolute;
     background: none;
+    @media (max-width: $tablet){
+        padding-top: 0;
+        padding-bottom: 0;
+    }
 }
 
 .navbar {
@@ -71,5 +80,79 @@ header.navbar {
         svg#Logo {
             fill: black;
         }
+    }
+    .navbar-burger {
+        color: black;
+    }
+    @media(max-width: $tablet){
+        padding: 0;
+    }
+}
+
+.navbar-burger {
+    @media (min-width: $tablet) {
+        width: 4.4rem;
+        span {
+        left: 1.2rem;
+        width: 2rem;
+        height: 3px;
+        }
+        span:nth-child(1) {
+            top: calc(50% - 10px)
+        }
+        span:nth-child(2) {
+            top: calc(50%)
+        }
+        span:nth-child(3) {
+            top: calc(50% + 10px)
+        }
+    }
+    color: white;
+}
+
+// mobile menu
+
+@media(max-width: $desktop){
+    .navbar-menu {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -300px;
+        right: auto;
+        bottom: 0;
+        width: 300px;
+        overflow-y: scroll;
+        transition: left 300ms ease;
+        z-index: 100;
+        .navbar-item {
+            color: $text;
+        }
+        .navbar-item:hover {
+            color: $text;
+        }
+        @media (max-width: 425px) {
+            width: 225px;
+        }
+    }
+    .navbar-menu.active {
+        left: 0;
+    }
+    .dark-screen-overlay {
+        display: block;
+        opacity: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: -100;
+        background: black;
+        transition: z-index 300ms ease, opacity 300ms ease;
+    }
+
+    .dark-screen-overlay.active {
+        position: fixed;
+        z-index: 50;
+        opacity: 0.8;
+        cursor: pointer;
     }
 }

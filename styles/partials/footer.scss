@@ -1,0 +1,55 @@
+.footer {
+    background: $text;
+    color: white;
+    svg {
+        fill: white;
+        max-width: 500px;
+    }
+    .footer-nav {
+        margin: 0 -0.5rem;
+        padding-bottom: 0.5rem;
+        .nav-item {
+            padding: 0.5rem;
+            color: white;
+            opacity: 0.5;
+            font-weight: bold;
+            font-size: 1rem;
+            transition: opacity 300ms ease;
+            -webkit-transition: opacity 300ms ease;
+        }
+        .nav-item:hover {
+            opacity: 0.8;
+        }
+    }
+    .footer-icons {
+        margin: 0 -0.5rem;
+        .icon {
+            color: white;
+            font-size: 2.5rem;
+            padding: 0.5rem;
+            display: inline-block;
+            width: auto;
+            height: auto;
+            opacity: 0.8;
+            transition: opacity 300ms ease;
+            -webkit-transition: opacity 300ms ease;
+            svg {
+                display: block;
+            }
+        }
+        .icon:hover {
+            opacity: 1;
+        }
+    }
+    .copyright-text {
+        font-size: 0.8rem;
+        opacity: 0.5;
+        margin-top: 3rem;
+        margin-bottom: -4rem;
+    }
+    @media (max-width: $tablet) {
+        .column.text-align-right {
+            text-align: left;
+        }
+    }
+}

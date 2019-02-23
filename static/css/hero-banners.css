@@ -13,6 +13,14 @@
 
 .hero.homepage {
   margin-bottom: 3rem; }
+  @media (max-width: 769px) {
+    .hero.homepage {
+      margin-bottom: 0; }
+      .hero.homepage .title {
+        font-size: 2.2rem; }
+      .hero.homepage .hero-body {
+        padding-top: 10rem;
+        padding-bottom: 4rem; } }
 
 .hero.portfolioBanner .title {
   font-size: 4rem;
