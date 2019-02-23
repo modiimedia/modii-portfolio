@@ -45,5 +45,7 @@ services:
 client: clients/sogmi.md
 project_website: https://www.sogmi.org
 project_year: 2018-01-01 06:00:00 +0000
+seo:
+  title: Website for Sons of God Ministries International
 
 ---
