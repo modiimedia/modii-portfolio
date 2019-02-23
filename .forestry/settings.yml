@@ -30,7 +30,7 @@ sections:
   - client
 - type: document
   path: data/settings.yaml
-  label: Settings
+  label: Site Settings
 upload_dir: modii-website
 public_path: https://res.cloudinary.com/modii/w_1000,q_60,f_auto
 front_matter_path: ''
