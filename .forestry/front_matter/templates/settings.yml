@@ -71,3 +71,5 @@ fields:
     label: Account URL
     config:
       required: true
+pages:
+- data/settings.yaml

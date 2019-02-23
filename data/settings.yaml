@@ -1,24 +1,30 @@
+---
 general:
-  site_name: "Modii"
-  site_slogan: "Web Design, Video Production, Branding and More"
-  site_description: "Modii is a full service media and design company based out of San Antonio, Texas. We offer complete solutions"
+  site_name: Modii
+  site_slogan: Web Design, Video Production, Branding and More
+  site_description: Modii is a full service media and design company based out of
+    San Antonio, Texas. We offer complete solutions
 media:
-  logo: ""
-  favicon: ""
-  
+  logo: ''
+  favicon: ''
 contact_information:
-  business_name: "Modii"
+  business_name: Modii
   phone: "+1.210.316.3129"
-  email: "info@modiimedia.com"
-  address_line_1: "10007 Lazy J Trail"
-  address_line_2: ""
-  city: "San Antonio"
-  state: "TX"
+  email: info@modiimedia.com
+  address_line_1: 10007 Lazy J Trail
+  address_line_2: ''
+  city: San Antonio
+  state: TX
   zip: 78023
 social_media:
-- icon: "facebook"
-  url: ""
-- icon: "instagram"
-  url: ""
-- icon: "twitter"
-  url: ""
+- icon: facebook
+  url: https://www.facebook.com/modiimedia/
+- icon: instagram
+  url: https://www.instagram.com/modiimedia/
+- icon: twitter
+  url: https://twitter.com/modiimedia
+seo:
+  site_name: Modii
+  site_slogan: Web Design, Video Production, Branding and More
+  site_description: Modii is a full service media and design company based out of
+    San Antonio, Texas. We offer complete solutions
