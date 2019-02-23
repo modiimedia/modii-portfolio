@@ -55,7 +55,6 @@ fields:
   - type: text
     name: state
     label: State
-  - type: number
   - type: text
     name: zip
     label: Zipcode
