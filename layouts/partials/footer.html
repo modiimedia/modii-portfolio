@@ -2,7 +2,7 @@
     <div class="container">
         <div class="columns">
             <div class="column is-one-third">
-                {{ partial "svg-logo.html" }}
+                {{ $.Site.Data.settings.media.logo | safeHTML }}
             </div>
             <div class="column text-align-right">
                 <div class="footer-nav">

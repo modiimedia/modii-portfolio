@@ -2,7 +2,7 @@
     <nav class="container">
         <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                {{ partial "svg-logo.html" }}
+                {{ $.Site.Data.settings.media.logo | safeHTML }}
                 </a>
                 <div class="navbar-burger burger" data-target="navbar-mobile-menu">
                     <span></span>
