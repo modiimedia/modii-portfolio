@@ -4,8 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Title }}</title>
     <link rel="stylesheet" href="/css/main.css">
+    <link rel="icon" href="{{ $.Site.Params.cloudinaryBase }}w_36,h_36,c_fit{{ $.Site.Data.settings.media.favicon }}">
+    {{ block "seo" . }}
+        <!-- meta tags for google and other search engines -->
+        <title>
+            {{- if .Params.seo.title -}}
+                {{- .Params.seo.title -}}
+            {{- else -}}
+                {{- .Title }} | {{ .Site.Title -}}
+            {{- end -}}
+        </title>
+        <meta name="description" content="
+            {{- if .Params.seo.description -}}
+                {{- .Params.seo.description | plainify -}}
+            {{- else if .Description -}}
+                {{- $desc := .Description | markdownify -}}
+                {{- $desc | plainify -}}
+            {{- else -}}
+                {{- .Summary | truncate 200 -}}
+            {{- end -}}">
+        <!-- open graph tags for FB and reddit -->
+        <meta property="og:title" content="
+            {{- if .Params.seo.social_title -}}
+                {{- .Params.seo.social_title -}}
+            {{- else if .Params.seo.title -}}
+                {{- .Params.seo.title -}}
+            {{- else -}}
+                {{- .Title -}}
+            {{- end -}}">
+        <meta property="og:description" content="
+            {{- if .Params.seo.social_description -}}
+                {{- .Params.seo.social_description | truncate 300 -}}
+            {{- else if .Params.seo.description -}}
+                {{- .Params.seo.description | plainify | truncate 300 -}}
+            {{- else if .Description -}}
+                {{- $desc := .Description | markdownify -}}
+                {{- $desc | plainify | truncate 300 -}}
+            {{- else -}}{{- .Summary | truncate 300 -}}{{- end -}}">
+        <meta property="og:image" content="
+            {{- if .Params.seo.social_image -}}
+                {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{- .Params.seo.social_image -}}
+            {{- else if .Params.featured_image -}}
+                {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{- .Params.featured_image -}}
+            {{- end -}}">
+        <meta property="og:url" content="https://www.modiimedia.com{{ .RelPermalink }}">
+        <!-- twitter cards for twitter -->
+        <meta name="twitter:title" content="
+            {{- if .Params.seo.social_title -}}
+                {{- .Params.seo.social_title -}}
+            {{- else if .Params.seo.title -}}
+                {{- .Params.seo.title -}}
+            {{- else -}}
+                {{- .Title -}}
+            {{- end -}}">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:site" content="@modiimedia">
+        <meta name="twitter:description" content="
+        {{- if .Params.seo.social_description -}}
+            {{- .Params.seo.social_description | truncate 300 -}}
+        {{- else if .Params.seo.description -}}
+            {{- .Params.seo.description | plainify | truncate 300 -}}
+        {{- else if .Description -}}
+            {{- $desc := .Description | markdownify -}}
+            {{- $desc | plainify | truncate 300 -}}
+        {{- else -}}{{- .Summary | truncate 300 -}}{{- end -}}">
+        <meta name="twitter:image" content="
+        {{- if .Params.seo.social_image -}}
+            {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{- .Params.seo.social_image -}}
+        {{- else if .Params.featured_image -}}
+            {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{- .Params.featured_image -}}
+        {{- end -}}">
+    {{ end }}
 </head>
 <body>
     {{ partial "navbar.html" . }}

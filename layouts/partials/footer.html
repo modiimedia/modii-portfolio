@@ -1,9 +1,30 @@
 <footer class="footer">
-    <div class="content has-text-centered">
-        <p>
-            <strong>Bulma</strong> by <a href="https://jgthms.com">Jeremy Thomas</a>. The source code is licensed
-            <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
-            is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
-        </p>
+    <div class="container">
+        <div class="columns">
+            <div class="column is-one-third">
+                {{ $.Site.Data.settings.media.logo | safeHTML }}
+            </div>
+            <div class="column text-align-right">
+                <div class="footer-nav">
+                    <a class="nav-item">Home</a>
+                    <a class="nav-item">Portfolio</a>
+                    <a class="nav-item">Contact Us</a>
+                </div>
+                <div class="footer-icons">
+                    <a class="icon">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="icon">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="icon">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-text">
+            Copyright {{ now.Format "2006" }} Modii
+        </div>
     </div>
 </footer>

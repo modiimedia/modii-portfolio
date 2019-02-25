@@ -1,11 +1,19 @@
 /* screen sizes */
 /* transitions */
+html.menu-open {
+  overflow: hidden; }
+
 header.navbar {
+  position: relative;
   top: 0;
   padding: 32px 0 5px 0;
   width: 100%;
   position: absolute;
   background: none; }
+  @media (max-width: 769px) {
+    header.navbar {
+      padding-top: 0;
+      padding-bottom: 0; } }
 
 .navbar {
   background: none;
@@ -56,3 +64,63 @@ header.navbar {
     color: #131313; }
   .navbar.scrolled .navbar-brand svg#Logo {
     fill: black; }
+  .navbar.scrolled .navbar-burger {
+    color: black; }
+  @media (max-width: 769px) {
+    .navbar.scrolled {
+      padding: 0; } }
+
+.navbar-burger {
+  color: white; }
+  @media (min-width: 769px) {
+    .navbar-burger {
+      width: 4.4rem; }
+      .navbar-burger span {
+        left: 1.2rem;
+        width: 2rem;
+        height: 3px; }
+      .navbar-burger span:nth-child(1) {
+        top: calc(50% - 10px); }
+      .navbar-burger span:nth-child(2) {
+        top: calc(50%); }
+      .navbar-burger span:nth-child(3) {
+        top: calc(50% + 10px); } }
+
+@media (max-width: 1088px) {
+  .navbar-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: -300px;
+    right: auto;
+    bottom: 0;
+    width: 300px;
+    overflow-y: scroll;
+    transition: left 300ms ease;
+    z-index: 100; }
+    .navbar-menu .navbar-item {
+      color: #131313; }
+    .navbar-menu .navbar-item:hover {
+      color: #131313; } }
+  @media (max-width: 1088px) and (max-width: 425px) {
+    .navbar-menu {
+      width: 225px; } }
+
+@media (max-width: 1088px) {
+  .navbar-menu.active {
+    left: 0; }
+  .dark-screen-overlay {
+    display: block;
+    opacity: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -100;
+    background: black;
+    transition: z-index 300ms ease, opacity 300ms ease; }
+  .dark-screen-overlay.active {
+    position: fixed;
+    z-index: 50;
+    opacity: 0.8;
+    cursor: pointer; } }

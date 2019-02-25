@@ -9,11 +9,17 @@ fields:
   label: SEO
   fields:
   - type: text
-    name: meta_title
-    label: Meta Title
+    name: title
+    label: Title
+  - type: textarea
+    name: description
+    label: Description
   - type: text
-    name: meta_description
-    label: Meta Description
+    name: social_title
+    label: Social Title
+  - type: textarea
+    name: social_description
+    label: Social Description
   - type: file
     name: og_image
     label: Social Image

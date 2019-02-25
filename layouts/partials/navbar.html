@@ -2,20 +2,19 @@
     <nav class="container">
         <div class="navbar-brand">
                 <a class="navbar-item" href="/">
-                {{ partial "svg-logo.html" }}
+                {{ $.Site.Data.settings.media.logo | safeHTML }}
                 </a>
-                <div class="navbar-burger burger" data-target="navbarExampleTransparentExample">
+                <div class="navbar-burger burger" data-target="navbar-mobile-menu">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
         </div>
-    
-        <div id="navbarExampleTransparentExample" class="navbar-menu">
+        <div id="m-nav-background" class="navbar-close dark-screen-overlay"></div>
+        <div id="navbar-mobile-menu" class="navbar-menu">
             <div class="navbar-start">
 
             </div>
-    
             <div class="navbar-end">
                 <a class="navbar-item" href="/">
                     <div>Home</div>
@@ -41,7 +40,7 @@
                         </p>
                     </div>
                 </div>
-            </a>
+            </div>
         </div>
     </nav>
 </header>

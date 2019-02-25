@@ -21,6 +21,16 @@
             // }
         }
     }
+    @media (max-width: $tablet){
+        .title {
+            font-size: 2.2rem;
+        }
+        .hero-body {
+            padding-top: 10rem;
+            padding-bottom: 4rem;
+        }
+        margin-bottom: 0;
+    }
 }
 
 .hero.portfolioBanner {

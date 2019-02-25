@@ -1,0 +1,75 @@
+---
+label: Settings
+hide_body: true
+is_partial: false
+fields:
+- type: field_group
+  label: SEO
+  description: General Website SEO Settings
+  name: seo
+  fields:
+  - type: text
+    name: site_name
+    label: Site Name
+    config:
+      required: true
+  - type: text
+    name: site_slogan
+    label: Site Slogan
+  - type: textarea
+    name: site_description
+    label: Site Description
+- type: field_group
+  label: Logos & Media
+  name: media
+  description: Change Website Logos
+  fields:
+  - type: textarea
+    name: logo
+    label: SVG Logo
+    description: Copy and paste the code for the SVG file here.
+  - type: file
+    name: favicon
+    label: Favicon
+- type: field_group
+  name: contact_information
+  label: Contact Information
+  fields:
+  - type: text
+    name: business_name
+    label: Business Name
+  - type: text
+    name: phone
+    label: Phone Number
+  - type: text
+    name: email
+    label: Email
+  - type: text
+    name: address_line_1
+    label: Address Line 1
+  - type: text
+    name: address_line_2
+    label: Address Line 2
+  - type: text
+    name: city
+    label: City
+  - type: text
+    name: state
+    label: State
+  - type: text
+    name: zip
+    label: Zipcode
+- type: field_group_list
+  name: social_media
+  label: Social Media
+  fields:
+  - type: text
+    name: icon
+    label: Fontawesome Icon
+  - type: text
+    name: url
+    label: Account URL
+    config:
+      required: true
+pages:
+- data/settings.yaml
