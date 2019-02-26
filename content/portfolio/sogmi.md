@@ -3,19 +3,21 @@ title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1548451539/modii-website/IMG_7443_edit_compressed.jpg"
 description: |-
-  ## The Miami Heat Offers a Fan Experience Unlike Any Other in Its League
-
   For a long time, the Miami Heat barely knew anything about its individual fans beyond the seats they were sitting in. Today, the Heat has a 360-degree view of each and every fan, engaging them in a highly tuned personal experience filled with just the right content and recommendations.
 
   ### OUR APPROACH
 
   The SapientRazorfish team, working with client marketers, envisioned an approach that would transform the Heat’s business by transforming its fan experience.
+
+  ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1551168724/modii-website/sogmi-podcast-page.jpg)
+
+  ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1551168724/modii-website/sogmi-podcast-page.jpg)
 modules:
 - template: image-block
   show_module: true
   image_width: full width
   background_style: light
-  image: "/v1539127682/modii-website/59c0ae2c1de2e0000152b8b2_marion-michele-191320.jpg"
+  image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
   name: Yoga Photo
 - template: text-block
   appearance:
@@ -44,7 +46,7 @@ services:
 - onsite training
 client: clients/sogmi.md
 project_website: https://www.sogmi.org
-project_year: 2018-01-01 00:00:00 -0600
+project_year: 2018-01-01 06:00:00 +0000
 seo:
   title: Website for Sons of God Ministries International
 
