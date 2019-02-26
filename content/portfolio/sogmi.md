@@ -1,7 +1,7 @@
 ---
 title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
-featured_image: "/v1548451539/modii-website/IMG_7443_edit_compressed.jpg"
+featured_image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
 description: |-
   For a long time, the Miami Heat barely knew anything about its individual fans beyond the seats they were sitting in. Today, the Heat has a 360-degree view of each and every fan, engaging them in a highly tuned personal experience filled with just the right content and recommendations.
 
