@@ -18,7 +18,7 @@ modules:
   image_width: full width
   background_style: light
   image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
-  name: Yoga Photo
+  name: Podcast Page On Laptop
 - template: text-block
   appearance:
     style: light
