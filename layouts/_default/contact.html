@@ -1,7 +1,7 @@
 {{ define "main" }}
-<section class="hero is-primary is-bold portfolioBanner curved">
-    <div class="heroImage gradientOverlay" style="background-image: url('https://uploads-ssl.webflow.com/5b1f0dea2d51d9f7fd926578/5b4d087cd30c141e42b4857b_photo-1483728642387-6c3bdd6c93e5%20(1).jpg')">
-        <div class="imageOverlay"></div>
+<section class="hero is-dark is-bold portfolioBanner curved">
+    <div class="heroImage gradientOverlay">
+        <!-- <div class="imageOverlay"></div> -->
     </div>
     <div class="heroImage" id="particle-up"></div>
     <div class="hero-body is-flex align-bottom">
@@ -19,22 +19,33 @@
     <div class="container">
         <div class="columns">
             <div class="column is-two-thirds">
-                <form style="background: rgb(238, 238, 238); padding: 2rem; border-radius: 4px; box-shadow: 0px 20px 200px rgba(0, 0, 0, 0.562)">
+                <form name="contact-form" method="POST" netlify-honeypot="hpot-field" data-netlify-recaptcha="true" data-netlify="true" style="background: rgb(238, 238, 238); padding: 2rem; border-radius: 4px; box-shadow: 0px 20px 200px rgba(0, 0, 0, 0.562)">
                     <div class="field_group">
+                        <!-- honeypot -->
+                        <input name="hpot-field" class="is-hidden" type="text">
                         <h2>Tell us about yourself</h2>
                         <div class="field">
-                            <div class="control">
+                            <div class="control has-icons-left">
                                 <input name="name" class="input is-medium" type="text" placeholder="Name" required>
+                                <span class="icon is-left">
+                                    <i class="fas fa-id-card"></i>
+                                </span>
                             </div>
                         </div>
                         <div class="field">
-                                <div class="control">
+                            <div class="control has-icons-left">
                                 <input name="email" class="input is-medium" type="email" placeholder="Email" required>
-                                </div>
+                                <span class="icon is-left">
+                                    <i class="fas fa-envelope"></i>
+                                </span>
+                            </div>
                         </div>
                         <div class="field">
-                            <div class="control">
+                            <div class="control has-icons-left">
                                 <input class="input is-medium" type="tel" name="phone" id="" placeholder="Phone Number">
+                                <span class="icon is-left">
+                                        <i class="fas fa-phone"></i>
+                                </span>
                             </div>
                         </div>        
                     </div>
@@ -54,7 +65,14 @@
                         <div class="field">
                             <textarea class="textarea" name="details" id="" rows="10"></textarea>
                         </div>
-                    </div>  
+                    </div>
+                    <div class="field_group">
+                        <div class="field">
+                            <div class="control">
+                                <div data-netlify-recaptcha="true"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="field">
                         <input class="button is-medium is-primary" type="submit" value="Submit">
                     </div>                  
