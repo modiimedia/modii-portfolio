@@ -1,4 +1,46 @@
-{{ define "main" }}
+{{- define "seo" -}}
+
+{{- $t := $.Site.Data.settings.seo.site_name -}}
+{{- $s := $.Site.Data.settings.seo.site_slogan -}}
+{{- $d := $.Site.Data.settings.seo.site_description -}}
+{{- $i := $.Site.Data.settings.seo.social_image -}}
+
+<!-- meta tags for google and other search engines -->
+<title>
+  {{- if $t -}}{{- $t -}}{{- else -}}{{- .Title -}}{{- end }}
+  {{- with $s }} | {{ . -}}{{- end -}}
+</title>
+<meta name="description" content="{{- if $d -}}{{- $d -}}{{- else -}}{{- .Summary | truncate 300 -}}{{- end -}}">
+
+<!-- open graph tags for FB and reddit -->
+<meta property="og:title" content="
+  {{- if $t -}}{{- $t -}}{{- else -}}{{- .Title -}}{{- end }}
+  {{- with $s }} | {{ . -}}{{- end -}}">
+<meta property="og:description" content="{{- if $d -}}{{- $d -}}{{- else -}}{{- .Summary | truncate 300 -}}{{- end -}}">
+<meta property="og:image" content="
+  {{- if $i -}}
+    {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{ $i -}}
+  {{- else if .Params.featured_image -}}
+    {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{ .Params.featured_image -}}
+  {{- end -}}">
+<meta property="og:url" content="https://www.modiimedia.com">
+
+<!-- twitter cards for twitter -->
+<meta name="twitter:title" content="
+  {{- if $t -}}{{- $t -}}{{- else -}}{{- .Title -}}{{- end }}
+  {{- with $s }} | {{ . -}}{{- end -}}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@modiimedia">
+<meta name="twitter:description" content="{{- if $d -}}{{- $d -}}{{- else -}}{{- .Summary | truncate 300 -}}{{- end -}}">
+<meta name="twitter:image" content="
+  {{- if $i -}}
+    {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{ $i -}}
+  {{- else if .Params.featured_image -}}
+    {{- $.Site.Params.cloudinaryBase -}}w_1200,h_1200,q_80,f_auto,c_fill{{ .Params.featured_image -}}
+  {{- end -}}">
+{{- end -}}
+
+{{- define "main" -}}
 <section class="hero is-dark is-large is-bold homepage">
     <!-- <div class="heroImage gradientOverlay" style="background-image:url(https://images.unsplash.com/photo-1527664557558-a2b352fcf203)">
         <div class="imageOverlay"></div>
