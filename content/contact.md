@@ -5,8 +5,9 @@ services_offered:
 - web design
 - web development
 - ecommerce development
-- graphic design
+- branding & graphic design
 - video production
 - audio production
 - photography
+- other
 ---
