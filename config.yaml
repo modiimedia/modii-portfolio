@@ -4,3 +4,4 @@ title: "Modii"
 enableRobotsTXT: true
 params:
   cloudinaryBase: "https://res.cloudinary.com/modii/"
+  gaTrackingID: "UA-96275522-2" 
