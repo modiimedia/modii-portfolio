@@ -1,7 +1,6 @@
 ---
 label: SEO
 hide_body: false
-is_partial: true
 display_field: seo
 fields:
 - type: field_group
