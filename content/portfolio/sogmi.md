@@ -8,7 +8,7 @@ modules:
   appearance:
     style: light
   show_module: true
-  name: Podcast Section
+  name: Details Section (Podcast Player, Site Search)
   content: |-
     ## Custom Podcast Player
 
@@ -32,6 +32,9 @@ client: clients/sogmi.md
 project_website: https://www.sogmi.org
 project_year: 2018-01-01 06:00:00 +0000
 seo:
-  title: Website for Sons of God Ministries International
+  title: 'Portfolio: SOGMI Website'
+  description: Custom website Modii created for Sons of God Ministries International.
+    The website features responsive design, event signups and registrations, site
+    search, newsletter signups, and a custom podcast player.
 
 ---
