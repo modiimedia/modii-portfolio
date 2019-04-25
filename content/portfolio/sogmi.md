@@ -14,7 +14,7 @@ modules:
 
     SOGMI needed a way to for their radio listeners to listen to podcasts on the website. We built out a custom audio player that looks great on all devices.
 
-    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556219035/modii-website/Podcast%20page.png)
+    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556220248/modii-website/Podcast%20page.png)
 
     Users are able to sort by various topics and keywords allowing them to find easily find episodes that they want to listen to.
 
