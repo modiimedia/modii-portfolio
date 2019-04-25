@@ -14,9 +14,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bulma": "^0.7.2",
+    "bulma": "^0.7.4",
     "node-sass": "^4.11.0",
-    "npm": "^6.7.0",
     "particles.js": "^2.0.0"
   },
   "devDependencies": {
