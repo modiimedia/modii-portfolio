@@ -2,7 +2,7 @@
 title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
-description: "![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)"
+description: "![Responsive homepage for SOGMI](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)"
 modules:
 - template: text-block
   appearance:
@@ -14,7 +14,7 @@ modules:
 
     SOGMI needed a way to for their radio listeners to listen to podcasts on the website. We built out a custom audio player that looks great on all devices.
 
-    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556220248/modii-website/Podcast%20page.png)
+    ![Mobile responsive podcast player for Sons of God Ministries International](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556220248/modii-website/Podcast%20page.png)
 
     Users are able to sort by various topics and keywords allowing them to find easily find episodes that they want to listen to.
 
@@ -22,7 +22,7 @@ modules:
 
     The website features blazing fast search powered by Algolia with average response times of 8 ms. It includes keyword highlighting, typo tolerance, and synonym support.
 
-    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556219978/modii-website/sogmi-site-search.png)
+    ![Custom website search on SOGMI website, with keyword highlighting, and typo tolerance.](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556219978/modii-website/sogmi-site-search.png)
 services:
 - web design
 - web development
