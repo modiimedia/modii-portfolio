@@ -16,6 +16,7 @@ modules:
   image: "/v1556222741/modii-website/sogmi-responsive-design.jpg"
   name: Responsive Design Banner
   drow_shadow: false
+  alt_text: Responsive web design for SOGMI website
 - template: text-block
   appearance:
     style: light
