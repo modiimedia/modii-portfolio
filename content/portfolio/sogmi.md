@@ -2,12 +2,20 @@
 title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
-description: "# Modii used the Hugo framework to build a blazing fast modern website
-  for Sons of God Ministries International (SOGMI). \n\nSOGMI has a lot of listeners
-  and viewers in the United States and in Southeast Asia meaning they needed a website
-  that was fast not only in the US but around the world.\n\n![Responsive homepage
-  for SOGMI](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)"
+description: |-
+  # Modii used the Hugo framework to build a blazing fast modern website for Sons of God Ministries International (SOGMI).
+
+  SOGMI has a lot of listeners and viewers in the United States and in Southeast Asia meaning they needed a website that was fast not only in the US but around the world.
+
+  ![Responsive homepage for SOGMI](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)
 modules:
+- template: image-block
+  show_module: true
+  image_width: full width
+  background_style: light
+  image: "/v1556222741/modii-website/sogmi-responsive-design.jpg"
+  name: Responsive Design Banner
+  drow_shadow: false
 - template: text-block
   appearance:
     style: light
