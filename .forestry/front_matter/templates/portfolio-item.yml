@@ -65,3 +65,5 @@ fields:
   - image-block
   - image-gallery
   - text-block
+pages:
+- content/portfolio/all4yogis-website.md

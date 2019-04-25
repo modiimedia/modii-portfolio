@@ -1,0 +1,23 @@
++++
+client = ""
+date = "2019-04-25T14:45:13-05:00"
+description = "![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556221501/modii-website/all4yogis-homepage.png)"
+draft = true
+featured_image = ""
+headline = "Local Ecommerce Website Design"
+modules = []
+project_website = "https://www.all4yogis.com"
+project_year = "2018-04-01T00:00:00-05:00"
+services = ["ecommerce development", "web design", "web development"]
+title = "All4Yogis Website"
+[appearance]
+dark_color = ""
+primary_color = ""
+[seo]
+description = ""
+og_image = ""
+social_description = ""
+social_title = ""
+title = ""
+
++++
