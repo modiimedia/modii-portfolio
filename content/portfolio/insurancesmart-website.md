@@ -2,7 +2,6 @@
 client = "clients/insurancesmart.md"
 date = "2019-04-25T16:19:32-05:00"
 description = "![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556227108/modii-website/insurancesmart-homepage.png)\n\n![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556227129/modii-website/insurancesmart-categories.png)\n\n![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556227149/modii-website/insurancesmart-product-page.png)"
-draft = true
 featured_image = ""
 headline = ""
 modules = []
