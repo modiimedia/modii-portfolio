@@ -2,8 +2,7 @@
 title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
-description: Modii provided a blazing fast website bringing SOGMI into the modern
-  age.
+description: "![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)"
 modules:
 - template: text-block
   appearance:
@@ -15,13 +14,11 @@ modules:
 
     SOGMI needed a way to for their radio listeners to listen to podcasts on the website. We built out a custom audio player that looks great on all devices.
 
-    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1539127819/modii-website/podcast%20screenshot.png)
+    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556219035/modii-website/Podcast%20page.png)
 
     Users are able to sort by various topics and keywords allowing them to find easily find episodes that they want to listen to.
 
     ## Site Search
-
-    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1548453222/modii-website/abundantlysocial_website_on_a_macbook.jpg)
 services:
 - web design
 - web development
