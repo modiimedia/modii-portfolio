@@ -21,7 +21,7 @@ modules:
   appearance:
     style: light
   show_module: true
-  name: Details Section (Podcast Player, Site Search)
+  name: Podcast Player Details
   content: |-
     ## Custom Podcast Player
 
@@ -30,7 +30,12 @@ modules:
     ![Mobile responsive podcast player for Sons of God Ministries International](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556220248/modii-website/Podcast%20page.png)
 
     Users are able to sort by various topics and keywords allowing them to find easily find episodes that they want to listen to.
-
+- template: text-block
+  show_module: true
+  appearance:
+    style: light
+  name: Site Search Details
+  content: |-
     ## Site Search
 
     The website features blazing fast search powered by Algolia with average response times of 8 ms. It includes keyword highlighting, typo tolerance, and synonym support.
