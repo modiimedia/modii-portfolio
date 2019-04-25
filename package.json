@@ -4,9 +4,12 @@
   "description": "",
   "main": "",
   "scripts": {
+    "prestart": "npm run css-compile",
     "start": "concurrently --kill-others \"npm run css-watch\"  \"hugo server\"",
-    "css-watch": "node-sass --watch styles/main.scss -o static/css/",
-    "publish": "hugo"
+    "css-watch": "node-sass --watch styles/main.scss -o assets/css/",
+    "css-compile": "node-sass styles/main.scss -o assets/css/",
+    "predeploy": "npm run css-compile",
+    "deploy": "hugo --minify"
   },
   "author": "",
   "license": "ISC",
