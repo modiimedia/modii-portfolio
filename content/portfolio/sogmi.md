@@ -19,6 +19,10 @@ modules:
     Users are able to sort by various topics and keywords allowing them to find easily find episodes that they want to listen to.
 
     ## Site Search
+
+    The website features blazing fast search powered by Algolia with average response times of 8 ms. It includes keyword highlighting, typo tolerance, and synonym support.
+
+    ![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556219978/modii-website/sogmi-site-search.png)
 services:
 - web design
 - web development
