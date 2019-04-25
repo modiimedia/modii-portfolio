@@ -2,8 +2,7 @@
 client = ""
 date = "2019-04-25T14:45:13-05:00"
 description = "![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556221501/modii-website/all4yogis-homepage.png)"
-draft = true
-featured_image = ""
+featured_image = "/v1556221787/modii-website/878498973.png"
 headline = "Local Ecommerce Website Design"
 modules = []
 project_website = "https://www.all4yogis.com"
