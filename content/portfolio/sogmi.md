@@ -2,7 +2,10 @@
 title: SOGMI Website
 headline: Preparing Ministry for a Global Audience
 featured_image: "/v1551168724/modii-website/sogmi-podcast-page.jpg"
-description: "![Responsive homepage for SOGMI](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)"
+description: |-
+  Modii used the Hugo framework to build a blazing fast modern website for Sons of God Ministries International (SOGMI). SOGMI has a lot of listeners and viewers in the United States and in Southeast Asia meaning they needed a website that was fast not only in the US but around the world.
+
+  ![Responsive homepage for SOGMI](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1556218792/modii-website/screencapture-sogmi-org-2019-02-26-00_59_00.png)
 modules:
 - template: text-block
   appearance:
