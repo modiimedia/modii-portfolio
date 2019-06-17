@@ -17,5 +17,6 @@ fields:
   name: logo
   label: Logo
 pages:
+- content/clients/team-all-in.md
 - content/clients/insurancesmart.md
 - content/clients/abundantly-social.md
