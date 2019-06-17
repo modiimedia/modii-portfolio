@@ -1,7 +1,6 @@
 +++
 client = "clients/team-all-in.md"
-description = "Modii helped Team All In create a mobile responsive website for their team. The new website looks great on mobile and includes some basic authentication tools restricting specific areas of the website to representatives.\n\n![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1560789531/modii-website/teamallin-mobile-view-member-videos.jpg)![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1560790885/modii-website/course-page-mobile-view-teamallin-2.jpg)![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1560791219/modii-website/teamallin-rep-login-modal.jpg)"
-draft = true
+description = "## Modii helped Team All In create a website platform they can use to train team representatives and provide resources for members.\n\nThe website is completely mobile responsive and features some basic authentication tools which allows representatives to login to a restricted area of the website.\n\n![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1560789531/modii-website/teamallin-mobile-view-member-videos.jpg)![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1560790885/modii-website/course-page-mobile-view-teamallin-2.jpg)![](https://res.cloudinary.com/modii/w_1000,q_60,f_auto/v1560791219/modii-website/teamallin-rep-login-modal.jpg)"
 featured_image = "/v1560790885/modii-website/course-page-mobile-view-teamallin-2.jpg"
 headline = "Website To Train Members And Representatives"
 project_website = ""
