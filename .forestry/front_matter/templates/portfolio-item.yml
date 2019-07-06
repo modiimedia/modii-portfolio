@@ -66,6 +66,6 @@ fields:
   - image-gallery
   - text-block
 pages:
+- content/portfolio/insurancesmart-website.md
 - content/portfolio/all4yogis-website.md
 - content/portfolio/team-all-in-website.md
-- content/portfolio/insurancesmart-website.md
