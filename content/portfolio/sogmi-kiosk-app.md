@@ -5,7 +5,7 @@ draft = true
 featured_image = "/v1564181665/modii-website/tablet-set-amount-screen.jpg"
 headline = "Turning Any Android Tablet Into A Donation Kiosk"
 project_website = ""
-project_year = "2018-07-01T00:00:00-05:00"
+project_year = "2019-07-26T00:00:00-05:00"
 services = ["web development", "web hosting", "web design", "point of sale integration", "mobile development"]
 title = "SOGMI Kiosk App"
 [appearance]
