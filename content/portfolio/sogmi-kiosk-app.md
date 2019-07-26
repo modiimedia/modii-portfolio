@@ -1,6 +1,6 @@
 +++
 client = "clients/sogmi.md"
-description = "Modii built a custom web application that can turn any android device into a donation kiosk. The application integrates with Square POS allowing customers to enter their information and then swipe their credit card to easily donate.\n\n<video autoplay loop><source src=\"/video/sogmi-donation-kiosk-video-v2.mp4\" type=\"video/mp4\">Your browser does not support the video tag.  \n</video>"
+description = "## Modii built a custom web application that can turn any android device into a donation kiosk. \n\nThe application integrates with Square POS allowing customers to enter their information and then swipe their credit card to easily donate.\n\n<video autoplay loop><source src=\"/video/sogmi-donation-kiosk-video-v2.mp4\" type=\"video/mp4\">Your browser does not support the video tag.  \n</video>"
 draft = true
 featured_image = "/v1564181665/modii-website/tablet-set-amount-screen.jpg"
 headline = "Turning Any Android Tablet Into A Donation Kiosk"
