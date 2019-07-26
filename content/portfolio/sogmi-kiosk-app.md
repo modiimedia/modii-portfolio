@@ -4,7 +4,6 @@ description = "Modii built a custom web application that can turn any android de
 draft = true
 featured_image = "/v1564181665/modii-website/tablet-set-amount-screen.jpg"
 headline = "Turning Any Android Tablet Into A Donation Kiosk"
-modules = []
 project_website = ""
 project_year = "2018-07-01T00:00:00-05:00"
 services = ["web development", "web hosting", "web design", "point of sale integration", "mobile development"]
@@ -18,5 +17,10 @@ og_image = ""
 social_description = ""
 social_title = ""
 title = ""
+[[modules]]
+images = ["/v1564181704/modii-website/tablet-set-amount-screen-1.jpg", "/v1564181713/modii-website/tablet-confirmation-screen.jpg"]
+name = "Gallery"
+show_module = true
+template = "image-gallery"
 
 +++
