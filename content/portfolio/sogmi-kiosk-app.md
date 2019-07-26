@@ -1,6 +1,6 @@
 +++
 client = "clients/sogmi.md"
-description = "## Modii built a custom web application that allows SOGMI to use any android tablet as a donation kiosk. \n\nThe application integrates with Square Point of Sale allowing donors to enter their information and then swipe their credit card to easily donate. The donor's information is stored within SOGMI's customer database in Square. Allowing them to keep track of everyone who has donated using the kiosk. \n\n<video autoplay loop><source src=\"/video/sogmi-donation-kiosk-video-v2.mp4\" type=\"video/mp4\">Your browser does not support the video tag.  \n</video>"
+description = "## Modii built a custom web application that allows SOGMI to use any android tablet as a donation kiosk. \n\nThe application integrates with Square Point of Sale allowing donors to enter their information and then swipe their credit card to easily donate. The donor's information is stored within SOGMI's customer database in Square, allowing them to keep track of everyone who has donated using the kiosk. \n\n<video autoplay loop><source src=\"/video/sogmi-donation-kiosk-video-v2.mp4\" type=\"video/mp4\">Your browser does not support the video tag.  \n</video>"
 draft = true
 featured_image = "/v1564181665/modii-website/tablet-set-amount-screen.jpg"
 headline = "A Donation Kiosk With Any Tablet"
